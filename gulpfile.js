@@ -12,9 +12,11 @@ gulp.task('browserSync', function(){
 });
 
 gulp.task('sass', function(){
-  return gulp.src('resources/scss/**/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('resources/css'))
+  return gulp.src('./resources/scss/*.scss')
+    .pipe(sass()
+        .on('error', sass.logError)
+      )
+    .pipe(gulp.dest('./resources/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
