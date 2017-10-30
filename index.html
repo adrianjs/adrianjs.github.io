@@ -15,29 +15,31 @@
     <title>My portfolio</title>
 
     <link rel="stylesheet" href="resources/css/styles.css">
+    <script src="https://use.fontawesome.com/595e66c799.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
   </head>
   <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd">
+    <nav class="navbar sticky-top navbar-light" style="background-color: #e3f2fd">
       <a class="navbar-brand" href="#">
         <img src="/resources/images/favicons/safari-pinned-tab.svg" width="30" height="30" alt="logo">
       </a>
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Portfolio</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   </nav>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid" id="about">
         <div class="row">
-          <div class="col-8">
+          <div class="col-12 col-md-8 col-lg-8">
             <p>
               Developer and Front-End designer (in training). My strongest suits are HTML/CSS, JavaScript, Java and C#.
               Have worked with various technologies, and am always looking to improve my chops.
@@ -45,11 +47,10 @@
             <hr>
             <h4>Developer - Web and General</h4>
           </div>
-          <div class="col-4">
+          <div class="col-4 col-md-4 col-lg-4">
             <img src="resources/images/me_irl.jpg" alt="Image of me" class="img-thumbnail" />
           </div>
         </div>
-      </div>
     </div>
 
     <div id="portfolio">
@@ -102,44 +103,58 @@
 
 
   <div id="contact">
-    <div class="col-offset-4 col-4" id="panel">
-      <h2>Contact me</h2>
+    <h2>Contact me</h2>
+    <hr />
+    <div class="row">
+      <div class="col-12 col-md-4 col-lg-4" id="panel">
+        <form>
+          <div class="group">
+            <input type="text" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
+          </div>
+          <div class="group">
+            <input type="text" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Email</label>
+          </div>
+          <div class="group">
+            <input type="text" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Number</label>
+          </div>
+          <div class="group">
+            <input type="text" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Message</label>
+          </div>
+          <div class="group">
+            <center>
+              <button type="submit" class="btn btn-warning">Send <i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
+            </center>
+          </div>
+        </form>
 
-      <form>
-        <div class="group">
-          <input type="text" required />
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Name</label>
         </div>
+        <div class="col-12 col-md-8 col-lg-8">
+          <p>
+            Want to get in touch with me?
+            Doesn't matter if you want to know more about me,
+            my experience, ask about my resume...
+            Feel free to use the form to get in touch with me,
+            I promise to reply as soon as I am able.
 
-        <div class="group">
-          <input type="text" required />
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Email</label>
+            While I realize it is probably very easy, please don't use this
+            form to spam me, please? M'kay <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+          </p>
         </div>
-
-        <div class="group">
-          <input type="text" required />
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Number</label>
-        </div>
-
-        <div class="group">
-          <input type="text" required />
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Message</label>
-        </div>
-        <div class="group">
-          <center>
-            <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button>
-          </center>
-        </div>
-      </form>
+      </div>
   </div>
+</div>
 
   <footer>
 
