@@ -20,7 +20,7 @@
 
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-light" style="background-color: #e3f2fd">
+    <nav class="navbar sticky-top navbar-light">
       <a class="navbar-brand" href="#">
         <img src="/resources/images/favicons/safari-pinned-tab.svg" width="30" height="30" alt="logo">
       </a>
@@ -36,10 +36,10 @@
       </li>
     </ul>
   </nav>
-  <div class="container">
+  <div class="container-fluid">
     <div class="jumbotron jumbotron-fluid" id="about">
         <div class="row">
-          <div class="col-12 col-md-8 col-lg-8">
+          <div class="col-12 col-md-6 col-lg-6 offset-md-2 offset-lg-2">
             <p>
               Developer and Front-End designer (in training). My strongest suits are HTML/CSS, JavaScript, Java and C#.
               Have worked with various technologies, and am always looking to improve my chops.
@@ -47,8 +47,8 @@
             <hr>
             <h4>Developer - Web and General</h4>
           </div>
-          <div class="col-4 col-md-4 col-lg-4">
-            <img src="resources/images/me_irl.jpg" alt="Image of me" class="img-thumbnail" />
+          <div class="col-8 col-md-4 col-lg-4 text-center">
+            <img src="resources/images/me_irl.jpg" alt="Image of me" class="img-thumbnail mx-auto rounded-circle" />
           </div>
         </div>
     </div>
@@ -57,7 +57,7 @@
       <h2>Portfolio</h2>
       <hr>
       <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-8 col-lg-4 offset-lg-2">
           <div class="card">
             <img class="card-img-top" data-src="holder.js/100%x200/" alt="Card image cap">
             <div class="card-block">
@@ -67,11 +67,11 @@
                 It is a calendar that scrapes for your lecture times and
                 delivery dates and helps you plan your week accordingly.
               </p>
-              <button type="button" class="btn btn-dark">Learn more</button>
+              <button type="button" class="btn btn-color">Learn more</button>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-8 col-lg-4">
           <div class="card">
             <img class="card-img-top" data-src="holder.js/100%x200/" alt="Card image cap">
             <div class="card-block">
@@ -81,11 +81,13 @@
                 We were tasked with using React to make a personal information manager,
                 which we took to mean a calendar, a segment for taking notes and a to-do list.
               </p>
-              <button type="button" class="btn btn-dark">Learn more</button>
+              <button type="button" class="btn btn-color">Learn more</button>
             </div>
           </div>
         </div>
-        <div class="col-4">
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-4 offset-lg-2">
           <div class="card">
             <img class="card-img-top" data-src="holder.js/100%x200/" alt="Card image cap">
             <div class="card-block">
@@ -94,7 +96,20 @@
                 This is another project I was part of during the course on Web Development.
                 It is a page about food, made with plain HTML, CSS and jQuery.
               </p>
-              <button type="button" class="btn btn-dark">Learn more</button>
+              <button type="button" class="btn btn-color">Learn more</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="card">
+            <img src="resources/images/..." alt="Image of project" class="card-img-top">
+            <div class="card-block">
+              <h4 class="card-title">CompareSmart</h4>
+              <p class="card-text">
+                A project made during the course on Web Development.
+                It is a catalog of smart phones, built using the MEAN stack.
+              </p>
+              <button type="button" class="btn btn-color">Learn more</button>
             </div>
           </div>
         </div>
