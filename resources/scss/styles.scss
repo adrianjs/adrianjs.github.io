@@ -2,6 +2,10 @@ $primary-standard: #8e24aa;
 $primary-light: #c158dc;
 $primary-dark: #5c007a;
 
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
 .navbar {
   background-color: $primary-dark;
   a {
@@ -14,6 +18,15 @@ $primary-dark: #5c007a;
   color: white;
 }
 
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
 
 #about {
   margin: -15px;
@@ -40,6 +53,7 @@ $primary-dark: #5c007a;
 
   .card{
     padding: 10px;
+    margin-top: 20px;
   }
 }
 
@@ -56,6 +70,7 @@ $primary-dark: #5c007a;
   margin: 30px;
   padding: 50px;
 
+
   .group {
     position: relative;
     margin-bottom: 35px;
@@ -63,6 +78,7 @@ $primary-dark: #5c007a;
 
   input {
     font-size: 18px;
+    color: white;
     padding: 5px 10px 10px 5px;
     display: block;
     width: 100%;
@@ -77,7 +93,7 @@ $primary-dark: #5c007a;
     &:focus ~ label, &:valid ~ label {
       top: -20px;
       font-size: 14px;
-      color: #000;
+      color: white;
     }
 
     &:focus ~ .bar:before, &:focus ~ .bar:after {
@@ -92,7 +108,7 @@ $primary-dark: #5c007a;
   }
 
   label {
-    color: #000;
+    color: white;
     font-size: 18px;
     font-weight: normal;
     position: absolute;
@@ -115,7 +131,7 @@ $primary-dark: #5c007a;
       width: 0;
       bottom: 1px;
       position: absolute;
-      background: #000;
+      background: white;
       transition: 0.2s ease all;
       -moz-transition: 0.2s ease all;
       -webkit-transition: 0.2s ease all;
@@ -163,9 +179,17 @@ $primary-dark: #5c007a;
   #panel {
     border: 1px solid rgb(200, 200, 200);
     box-shadow: rgba(0,0,0,0.1) 0px 5px 5px 2px;
-    background: #e3f2fd;
+    background: $primary-standard;
 
-    border-radius: 4px;
+    border-radius: 8px;
     padding-top: 50px;
   }
+}
+
+footer {
+  background-color: $primary-dark;
+  color: white;
+  
+  text-align: center;
+  padding-bottom: 50px;
 }

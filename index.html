@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="resources/css/styles.css">
     <script src="https://use.fontawesome.com/595e66c799.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
   </head>
@@ -47,7 +48,7 @@
             <hr>
             <h4>Developer - Web and General</h4>
           </div>
-          <div class="col-8 col-md-4 col-lg-4 text-center">
+          <div class="col-8 col-md-4 col-lg-4 offset-2 offset-md-0">
             <img src="resources/images/me_irl.jpg" alt="Image of me" class="img-thumbnail mx-auto rounded-circle" />
           </div>
         </div>
@@ -59,8 +60,9 @@
       <div class="row">
         <div class="col-12 col-md-8 col-lg-4 offset-lg-2">
           <div class="card">
-            <img class="card-img-top" data-src="holder.js/100%x200/" alt="Card image cap">
-            <div class="card-block">
+            <img class="card-img-top" src="resources/images/projects/eo.png" alt="EO Picture">
+            <div class="card-body">
+              <hr>
               <h4 class="card-title">Educational Organizer</h4>
               <p class="card-text">
                 A school project in a course about software development.
@@ -73,8 +75,9 @@
         </div>
         <div class="col-12 col-md-8 col-lg-4">
           <div class="card">
-            <img class="card-img-top" data-src="holder.js/100%x200/" alt="Card image cap">
-            <div class="card-block">
+            <img class="card-img-top" src="resources/images/projects/react-hexagon.png" alt="PIM Picture">
+            <div class="card-body">
+              <hr>
               <h4 class="card-title">Personal Information Manager</h4>
               <p class="card-text">
                 This is a project I was a part of in a course about Web Development.
@@ -89,8 +92,9 @@
       <div class="row">
         <div class="col-12 col-md-8 col-lg-4 offset-lg-2">
           <div class="card">
-            <img class="card-img-top" data-src="holder.js/100%x200/" alt="Card image cap">
-            <div class="card-block">
+            <img class="card-img-top" src="resources/images/projects/montebello-appeti.png" alt="Montebello Food picture - appetizers page">
+            <div class="card-body">
+              <hr>
               <h4 class="card-title">Montebello food</h4>
               <p class="card-text">
                 This is another project I was part of during the course on Web Development.
@@ -102,13 +106,14 @@
         </div>
         <div class="col-12 col-md-8 col-lg-4">
           <div class="card">
-            <img src="resources/images/..." alt="Image of project" class="card-img-top">
-            <div class="card-block">
+            <img src="resources/images/projects/comparesmart.png" alt="CompareSmart Picture - home page" class="card-img-top">
+            <div class="card-body">
+              <hr>
               <h4 class="card-title">CompareSmart</h4>
               <p class="card-text">
                 A project made during the course on Web Development.
                 It is a catalog of smart phones, built using the MEAN stack.
-              </p>
+              </p>  
               <button type="button" class="btn btn-color">Learn more</button>
             </div>
           </div>
@@ -122,7 +127,7 @@
     <hr />
     <div class="row">
       <div class="col-12 col-md-4 col-lg-4" id="panel">
-        <form>
+        <form id="contact-form">
           <div class="group">
             <input type="text" required />
             <span class="highlight"></span>
@@ -149,7 +154,7 @@
           </div>
           <div class="group">
             <center>
-              <button type="submit" class="btn btn-warning">Send <i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
+              <button type="submit" class="btn btn-light">Send <i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
             </center>
           </div>
         </form>
@@ -166,13 +171,26 @@
             While I realize it is probably very easy, please don't use this
             form to spam me, please? M'kay <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
           </p>
+          
         </div>
       </div>
   </div>
 </div>
 
   <footer>
-
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h4>About this site</h4>
+        <p>Made by Adrian Steffenakk</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <h4>Catch me on </h4>
+          <a class="btn btn-circle btn-color" href="https://www.instagram.com/adrste10/" role="button"><i class="fa fa-instagram"></i></a>
+          <a class="btn btn-circle btn-color" href="https://github.com/adrianjs" role="button"><i class="fa fa-github"></i></a>
+          <a class="btn btn-circle btn-color" href="https://www.facebook.com/Adrian1337" role="button"><i class="fa fa-facebook"></i></a>
+          <a class="btn btn-circle btn-color" href="https://www.linkedin.com/in/adrianjsteffenakk/" role="button"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
   </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

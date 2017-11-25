@@ -1,3 +1,6 @@
+* {
+  font-family: "Ubuntu", sans-serif; }
+
 .navbar {
   background-color: #5c007a; }
   .navbar a {
@@ -6,6 +9,15 @@
 .btn-color {
   background-color: #c158dc;
   color: white; }
+
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857; }
 
 #about {
   margin: -15px;
@@ -24,7 +36,8 @@
     padding-top: 50px;
     text-align: center; }
   #portfolio .card {
-    padding: 10px; }
+    padding: 10px;
+    margin-top: 20px; }
 
 #contact {
   margin: 30px;
@@ -39,6 +52,7 @@
     margin-bottom: 35px; }
   #contact input {
     font-size: 18px;
+    color: white;
     padding: 5px 10px 10px 5px;
     display: block;
     width: 100%;
@@ -50,7 +64,7 @@
     #contact input:focus ~ label, #contact input:valid ~ label {
       top: -20px;
       font-size: 14px;
-      color: #000; }
+      color: white; }
     #contact input:focus ~ .bar:before, #contact input:focus ~ .bar:after {
       width: 50%; }
     #contact input:focus ~ .highlight {
@@ -58,7 +72,7 @@
       -webkit-animation: inputHighlighter 0.3s ease;
       -moz-animation: inputHighlighter 0.3s ease; }
   #contact label {
-    color: #000;
+    color: white;
     font-size: 18px;
     font-weight: normal;
     position: absolute;
@@ -78,7 +92,7 @@
       width: 0;
       bottom: 1px;
       position: absolute;
-      background: #000;
+      background: white;
       transition: 0.2s ease all;
       -moz-transition: 0.2s ease all;
       -webkit-transition: 0.2s ease all; }
@@ -111,6 +125,12 @@
   #contact #panel {
     border: 1px solid #c8c8c8;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
-    background: #e3f2fd;
-    border-radius: 4px;
+    background: #8e24aa;
+    border-radius: 8px;
     padding-top: 50px; }
+
+footer {
+  background-color: #5c007a;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px; }
