@@ -6,6 +6,10 @@ $primary-dark: #5c007a;
   font-family: "Ubuntu", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 .navbar {
   background-color: $primary-dark;
   a {

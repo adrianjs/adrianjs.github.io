@@ -1,6 +1,9 @@
 * {
   font-family: "Ubuntu", sans-serif; }
 
+body {
+  position: relative; }
+
 .navbar {
   background-color: #5c007a; }
   .navbar a {

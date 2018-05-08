@@ -21,7 +21,7 @@
 
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-light">
+    <nav id="navbar" class="navbar sticky-top navbar-light">
       <a class="navbar-brand" href="#">
         <img src="/resources/images/favicons/safari-pinned-tab.svg" width="30" height="30" alt="logo">
       </a>
@@ -37,143 +37,145 @@
       </li>
     </ul>
   </nav>
-  <div class="container-fluid">
-    <div class="jumbotron jumbotron-fluid" id="about">
+  <div data-spy="scroll" data-target="#navbar">
+    <div class="container-fluid">
+      <div class="jumbotron jumbotron-fluid" id="about">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 offset-md-2 offset-lg-2">
+              <p>
+                Developer and Front-End designer (in training). My strongest suits are HTML/CSS, JavaScript, Java and C#.
+                Have worked with various technologies, and am always looking to improve my chops.
+              </p>
+              <hr>
+              <h4>Developer - Web and General</h4>
+            </div>
+            <div class="col-8 col-md-4 col-lg-4 offset-2 offset-md-0">
+              <img src="resources/images/me_irl.jpg" alt="Image of me" class="img-thumbnail mx-auto rounded-circle" />
+            </div>
+          </div>
+      </div>
+
+      <div id="portfolio">
+        <h2>Portfolio</h2>
+        <hr>
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-6 offset-md-2 offset-lg-2">
+          <div class="col-12 col-md-8 col-lg-4 offset-lg-2">
+            <div class="card">
+              <img class="card-img-top" src="resources/images/projects/eo.png" alt="EO Picture">
+              <div class="card-body">
+                <hr>
+                <h4 class="card-title">Educational Organizer</h4>
+                <p class="card-text">
+                  A school project in a course about software development.
+                  It is a calendar that scrapes for your lecture times and
+                  delivery dates and helps you plan your week accordingly.
+                </p>
+                <button type="button" class="btn btn-color">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-lg-4">
+            <div class="card">
+              <img class="card-img-top" src="resources/images/projects/react-hexagon.png" alt="PIM Picture">
+              <div class="card-body">
+                <hr>
+                <h4 class="card-title">Personal Information Manager</h4>
+                <p class="card-text">
+                  This is a project I was a part of in a course about Web Development.
+                  We were tasked with using React to make a personal information manager,
+                  which we took to mean a calendar, a segment for taking notes and a to-do list.
+                </p>
+                <button type="button" class="btn btn-color">Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-4 offset-lg-2">
+            <div class="card">
+              <img class="card-img-top" src="resources/images/projects/montebello-appeti.png" alt="Montebello Food picture - appetizers page">
+              <div class="card-body">
+                <hr>
+                <h4 class="card-title">Montebello food</h4>
+                <p class="card-text">
+                  This is another project I was part of during the course on Web Development.
+                  It is a page about food, made with plain HTML, CSS and jQuery.
+                </p>
+                <button type="button" class="btn btn-color">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-lg-4">
+            <div class="card">
+              <img src="resources/images/projects/comparesmart.png" alt="CompareSmart Picture - home page" class="card-img-top">
+              <div class="card-body">
+                <hr>
+                <h4 class="card-title">CompareSmart</h4>
+                <p class="card-text">
+                  A project made during the course on Web Development.
+                  It is a catalog of smart phones, built using the MEAN stack.
+                </p>  
+                <button type="button" class="btn btn-color">Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div id="contact">
+      <h2>Contact me</h2>
+      <hr />
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-4" id="panel">
+          <form id="contact-form">
+            <div class="group">
+              <input type="text" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Name</label>
+            </div>
+            <div class="group">
+              <input type="text" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+            <div class="group">
+              <input type="text" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Number</label>
+            </div>
+            <div class="group">
+              <input type="text" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Message</label>
+            </div>
+            <div class="group">
+              <center>
+                <button type="submit" class="btn btn-light">Send <i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
+              </center>
+            </div>
+          </form>
+
+          </div>
+          <div class="col-12 col-md-8 col-lg-8">
             <p>
-              Developer and Front-End designer (in training). My strongest suits are HTML/CSS, JavaScript, Java and C#.
-              Have worked with various technologies, and am always looking to improve my chops.
+              Want to get in touch with me?
+              Doesn't matter if you want to know more about me,
+              my experience, ask about my resume...
+              Feel free to use the form to get in touch with me,
+              I promise to reply as soon as I am able.
+
+              While I realize it is probably very easy, please don't use this
+              form to spam me, please? M'kay <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
             </p>
-            <hr>
-            <h4>Developer - Web and General</h4>
-          </div>
-          <div class="col-8 col-md-4 col-lg-4 offset-2 offset-md-0">
-            <img src="resources/images/me_irl.jpg" alt="Image of me" class="img-thumbnail mx-auto rounded-circle" />
+            
           </div>
         </div>
     </div>
-
-    <div id="portfolio">
-      <h2>Portfolio</h2>
-      <hr>
-      <div class="row">
-        <div class="col-12 col-md-8 col-lg-4 offset-lg-2">
-          <div class="card">
-            <img class="card-img-top" src="resources/images/projects/eo.png" alt="EO Picture">
-            <div class="card-body">
-              <hr>
-              <h4 class="card-title">Educational Organizer</h4>
-              <p class="card-text">
-                A school project in a course about software development.
-                It is a calendar that scrapes for your lecture times and
-                delivery dates and helps you plan your week accordingly.
-              </p>
-              <button type="button" class="btn btn-color">Learn more</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-8 col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="resources/images/projects/react-hexagon.png" alt="PIM Picture">
-            <div class="card-body">
-              <hr>
-              <h4 class="card-title">Personal Information Manager</h4>
-              <p class="card-text">
-                This is a project I was a part of in a course about Web Development.
-                We were tasked with using React to make a personal information manager,
-                which we took to mean a calendar, a segment for taking notes and a to-do list.
-              </p>
-              <button type="button" class="btn btn-color">Learn more</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-8 col-lg-4 offset-lg-2">
-          <div class="card">
-            <img class="card-img-top" src="resources/images/projects/montebello-appeti.png" alt="Montebello Food picture - appetizers page">
-            <div class="card-body">
-              <hr>
-              <h4 class="card-title">Montebello food</h4>
-              <p class="card-text">
-                This is another project I was part of during the course on Web Development.
-                It is a page about food, made with plain HTML, CSS and jQuery.
-              </p>
-              <button type="button" class="btn btn-color">Learn more</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-8 col-lg-4">
-          <div class="card">
-            <img src="resources/images/projects/comparesmart.png" alt="CompareSmart Picture - home page" class="card-img-top">
-            <div class="card-body">
-              <hr>
-              <h4 class="card-title">CompareSmart</h4>
-              <p class="card-text">
-                A project made during the course on Web Development.
-                It is a catalog of smart phones, built using the MEAN stack.
-              </p>  
-              <button type="button" class="btn btn-color">Learn more</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  <div id="contact">
-    <h2>Contact me</h2>
-    <hr />
-    <div class="row">
-      <div class="col-12 col-md-4 col-lg-4" id="panel">
-        <form id="contact-form">
-          <div class="group">
-            <input type="text" required />
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Name</label>
-          </div>
-          <div class="group">
-            <input type="text" required />
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Email</label>
-          </div>
-          <div class="group">
-            <input type="text" required />
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Number</label>
-          </div>
-          <div class="group">
-            <input type="text" required />
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Message</label>
-          </div>
-          <div class="group">
-            <center>
-              <button type="submit" class="btn btn-light">Send <i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
-            </center>
-          </div>
-        </form>
-
-        </div>
-        <div class="col-12 col-md-8 col-lg-8">
-          <p>
-            Want to get in touch with me?
-            Doesn't matter if you want to know more about me,
-            my experience, ask about my resume...
-            Feel free to use the form to get in touch with me,
-            I promise to reply as soon as I am able.
-
-            While I realize it is probably very easy, please don't use this
-            form to spam me, please? M'kay <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
-          </p>
-          
-        </div>
-      </div>
   </div>
 </div>
 
